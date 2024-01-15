@@ -1,0 +1,45 @@
+<div class="ticket_card">
+  <div class="card_upper_section">
+    <div class="card_title">عرض التذكرة الخاصة بالفيلم</div>
+    <div class="copy_btn">
+      <button (click)="copyToClipboard()">
+        <span class="ticket_text">
+          www.tazkty.com/473847
+        </span>
+        <i class="fa-regular fa-copy"></i>
+      </button>
+      <p>فعال حتى 15 يوليو 2023</p>
+    </div>
+
+    <div class="delete_btn">
+      <div class="tooltip_layer">
+        <i class="fa-solid fa-trash-can"></i>
+        <span class="tooltip-text">
+          حذف
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card_lower_section">
+    <div class="discount">
+      <div>
+        <p>خصم</p>
+        <p>25%</p>
+      </div>
+      <div class="share">
+        <button> <i class="fa-regular fa-paper-plane"></i> مشاركة </button>
+      </div>
+    </div>
+
+    <div class="qrCode">
+      <div>
+        @if (ssrService.isBrowserOnly) {
+          <qrcode [qrdata]="'https://atechnologies.info/'" [colorLight]="'#ffffffff'" [elementType]="'canvas'"
+          [errorCorrectionLevel]="'M'" [title]="'ATechnologies QrCode'" [width]="82"></qrcode>
+        }
+      </div>
+    </div>
+
+  </div>
+</div>

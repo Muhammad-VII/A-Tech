@@ -1,0 +1,77 @@
+// Global colors
+@import "../../../colors";
+
+main {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  margin-block: 4rem;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ticket_number {
+      display: flex;
+      align-items: center;
+      gap: 0.438rem;
+      h4 {
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+        color: $font-color;
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        width: 32px;
+        height: 32px;
+        background-color: #e7eaed;
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(167, 167, 167, 0.952);
+        }
+      }
+    }
+
+    .edit_button {
+      button {
+        padding: .3rem 1rem;
+        cursor: pointer;
+        border-radius: 3px;
+        border: solid 1px #e9eaea;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        color: $font-color;
+        transition: background-color .2s ease;
+        &:hover {
+          background-color: #f9f9f936;
+        }
+        i {
+          color: $main-color;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  section {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .card_view {
+      margin-top: 2rem;
+    }
+    .chart {
+      width: 100%;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      
+    }
+  }
+}

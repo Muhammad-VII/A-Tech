@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+// Fonts
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url(./assets/fonts/Neo\ Sans\ Arabic\ Regular.woff) format("woff"),
+    url(./assets/fonts/Neo_Sans_Medium.woff) format("woff"),
+    url(./assets/fonts/NeoSansArabic.woff) format("woff"),
+    url(./assets/fonts/NeoSansArabicBlack.woff),
+    url(./assets/fonts/NeoSansArabicBold.woff) format("woff"),
+    url(./assets/fonts/NeoSansArabicLight.woff) format("woff"),
+    url(./assets/fonts/NeoSansArabicMedium.woff) format("woff"),
+    url(./assets/fonts/NeoSansArabicUltra.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/fonts/Inter-Regular.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// Global Styles
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F3F5F7;
+}
+
+.container {
+  max-width: 1600px; 
+  margin: 0 auto;
+  padding: 20px;     
+  box-sizing: border-box;
+}

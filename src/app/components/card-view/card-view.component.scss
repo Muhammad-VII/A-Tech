@@ -62,16 +62,15 @@
         align-items: center;
         font-size: "Inter", sans-serif;
         margin: 0.5rem auto 0.4rem auto;
-        cursor: pointer;
         font-size: 16px;
-        transition: background-color 0.2s ease;
-        &:hover {
-          background-color: #ffffffd5;
-        }
         i {
           margin-right: 1rem;
           color: $main-color;
           cursor: pointer;
+          transition: all 0.2s ease;
+          &:hover {
+            color: $main-color-transpearnt;
+          };
         }
       }
     }
@@ -90,7 +89,6 @@
           background-color: #1e1b39;
           color: #fff;
           white-space: nowrap;
-          // padding: 10px 15px;
           text-align: center;
           border-radius: 7px;
           visibility: hidden;
@@ -102,7 +100,7 @@
             content: "";
             position: absolute;
             left: 50%;
-            bottom: 100%;
+            bottom: 80%;
             transform: translateX(-50%);
             border: 15px solid;
             border-color: #0000 #0000 #000 #0000;
@@ -119,10 +117,11 @@
         cursor: pointer;
         color: #fff;
         font-size: 18px;
+        &:hover {
+          color: $main-color;
+        }
       }
-      i:hover {
-        color: $main-color;
-      }
+
     }
   }
 

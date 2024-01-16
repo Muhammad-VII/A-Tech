@@ -64,13 +64,19 @@ main {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    .card_view {
-      margin-top: 2rem;
-    }
+    gap: 2rem;
     .chart {
       width: 100%;
       background-color: #f9f9f9;
+      height: 377px;
+      border: solid 1px #e9eaea;
       border-radius: 5px;
+      .chart_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
       
     }
   }

@@ -22,9 +22,18 @@ import { SsrService } from '../../services/ssr.service';
 export class ChartComponent {
   public ssrService = inject(SsrService);
   options: EChartsOption = {
+    tooltip: {
+      trigger: 'item',
+      align: 'right',
+    },
+    grid: {
+      left: '3%',
+      right: '3%',
+      bottom: '5%',
+      containLabel: true,
+    },
     xAxis: {
       boundaryGap: false,
-      
       data: [
         'ديسمبر',
         'نوفمبر',

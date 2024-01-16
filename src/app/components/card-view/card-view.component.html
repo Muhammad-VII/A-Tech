@@ -2,11 +2,11 @@
   <div class="card_upper_section">
     <div class="card_title">عرض التذكرة الخاصة بالفيلم</div>
     <div class="copy_btn">
-      <button (click)="copyToClipboard()">
+      <button>
         <span class="ticket_text">
           www.tazkty.com/473847
         </span>
-        <i class="fa-regular fa-copy"></i>
+        <i (click)="copyToClipboard()" class="fa-regular fa-copy"></i>
       </button>
       <p>فعال حتى 15 يوليو 2023</p>
     </div>

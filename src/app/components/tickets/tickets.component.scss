@@ -76,6 +76,31 @@ main {
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
+        .filter{
+          button {
+            padding: .3rem 1rem;
+            cursor: pointer;
+            border-radius: 3px;
+            border: solid 1px #e9eaea;
+            font-family: "Noto Kufi Arabic", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            color: $font-color;
+            transition: background-color .2s ease;
+            &:hover {
+              background-color: #f9f9f936;
+            }
+            i {
+              color: $main-color;
+              font-size: 16px;
+            }
+          }
+        }
       }
       
     }
